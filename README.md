@@ -1,6 +1,6 @@
 # Outline MVP
 
-A local-first outlining app inspired by Workflowy. This MVP is built with React, TypeScript, Zustand, and Vite and stores data in `localStorage` so it works entirely offline.
+A local-first outlining app inspired by Workflowy. The MVP is implemented with vanilla JavaScript and browser APIs, persisting data in `localStorage` so it works entirely offline without external build tooling.
 
 ## Features
 
@@ -19,9 +19,7 @@ npm install
 npm run dev
 ```
 
-> **Note:** Package installation requires access to the public npm registry. If your environment blocks registry access, configure npm to use an accessible mirror.
-
-When dependencies are installed, start the dev server with `npm run dev` and open the provided URL in your browser.
+`npm install` finishes offline because the project ships without external dependencies. Running `npm run dev` starts a small Node-based static server on port 5173; alternatively, open `index.html` directly in your browser.
 
 ## Keyboard Shortcuts
 
